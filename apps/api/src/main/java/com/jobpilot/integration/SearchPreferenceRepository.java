@@ -1,0 +1,1 @@
+package com.jobpilot.integration;import org.springframework.data.jpa.repository.JpaRepository;import java.util.*;public interface SearchPreferenceRepository extends JpaRepository<SearchPreference,Long>{Optional<SearchPreference>findByUserId(Long id);}

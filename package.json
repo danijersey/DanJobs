@@ -1,0 +1,1 @@
+{"name":"DanJobs","private":true,"scripts":{"install:web":"npm --prefix apps/web install","start:web":"npm --prefix apps/web start","build:web":"npm --prefix apps/web run build","start:api":"cd apps/api && ./mvnw spring-boot:run","build:api":"cd apps/api && ./mvnw clean package -DskipTests"}}

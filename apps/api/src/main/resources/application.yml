@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3307/DanJobs?createDatabaseIfNotExist=true&serverTimezone=UTC}
+    username: ${DB_USER:DanJobs}
+    password: ${DB_PASSWORD:DanJobs}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  mail:
+    host: ${MAIL_HOST:smtp-relay.brevo.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USER:}
+    password: ${MAIL_PASSWORD:}
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+app:
+  jwt-secret: ${JWT_SECRET:change-this-secret-key-with-at-least-32-characters}
+  frontend-url: ${FRONTEND_URL:http://localhost:4200}
+  adzuna-app-id: ${ADZUNA_APP_ID:}
+  adzuna-app-key: ${ADZUNA_APP_KEY:}
+springdoc:
+  swagger-ui.path: /docs
