@@ -21,3 +21,7 @@ application-local.properties
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Archivos compilados de Java
+bin/
+*.class
