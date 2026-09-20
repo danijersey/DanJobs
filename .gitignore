@@ -1,8 +1,23 @@
-node_modules
-dist
-target
-.angular
-.env
+# Angular / Node
+node_modules/
+dist/
+.angular/
+
+# Spring Boot / Maven
+target/
 *.log
-.idea
-.vscode
+
+# Variables y credenciales
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# Editores
+.idea/
+.vscode/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
